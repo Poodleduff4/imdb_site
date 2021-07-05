@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
 }).listen(8080)
 
 
-
+document.getElementById('mDetails').innerHTML = 'ayo';
 
 function getValue(name) {
     imdb.get({name: name}, {apiKey: '95b1aff'}).then(console.log).catch(console.log);
