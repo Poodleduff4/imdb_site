@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Movie Database</h1>
+
+<p>Enter a movie to search.</p>
+
+
+<form onsubmit="callIMDB()">
+    <label for="mName">Movie name:</label>
+    <input type="text" id="mName" name="mName">
+    <input type="submit" value="Submit"><br><br>
+
+    <label for="dName">Director name:</label>
+    <input type="text" id="dName" name="dName">
+    <input type="submit" value="Submit"><br><br>
+  </form> 
+
+  <label for="mDetails">Results:</label><br>
+  <textarea id="mDetails" name="mDetails" rows="10" cols="100" readonly></textarea>
+
+  <script>
+      function callIMDB() {
+          console.log('piss');
+          document.getElementById('mDetails').innerText = 'piss and shit';
+      }
+  </script>
+
+</body>
+</html>

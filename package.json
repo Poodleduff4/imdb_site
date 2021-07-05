@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "imdb-api": "^4.4.1"
+  }
+}
