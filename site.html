@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="main.js" type="text/javascript"></script>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+  const axios = require('axios');
+</script>
+
+
 <body>
 <h1>Movie Database</h1>
 
@@ -20,12 +22,17 @@
   </form> 
 
   <label for="mDetails">Results:</label><br>
-  <textarea id="mDetails" name="mDetails" rows="10" cols="100" readonly></textarea>
+  <textarea id="mDetails" name="mDetails" rows="10" cols="100" >piss and shit</textarea>
 
   <script>
       function callIMDB() {
           console.log('piss');
-          document.getElementById('mDetails').innerText = 'piss and shit';
+          document.getElementById('mDetails').innerHTML = 'piss';
+      //   axios.get("https://www.omdbapi.com/?apikey=95b1aff&t=" + name).then(function (response) {
+      //   // handle success
+      //   console.log(response.data['Title']);
+      //   document.getElementById('mDetails').innerHTML = response.data['Title'];
+      // })
       }
   </script>
 
